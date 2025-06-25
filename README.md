@@ -125,4 +125,15 @@ int main()
   
 }
 ```
+## cpp learned things
+
+``` cpp
+
+struct ether_addr
+{
+  uint8_t ether_addr_octet[ETH_ALEN];
+} __attribute__ ((__packed__));
+
+```
+
 
