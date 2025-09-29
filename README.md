@@ -135,5 +135,24 @@ struct ether_addr
 } __attribute__ ((__packed__));
 
 ```
+#lambda function
+``` cpp
+#include <iostream>
+#include <stack>
+#include <queue>
 
+int main()
+{
+
+    auto add = [](int a, int b) { return a+b;};
+    
+    auto sum = [=](int a, int b) { return a+b;};
+    
+    std::cout << "lambda-1 Sum: " << add(4, 1) << std::endl;
+     [](int a, int b)
+    std::cout << "lambda-2 Sum: " << sum (3,5) << std::endl; 
+    
+    return 0;
+}
+```
 
